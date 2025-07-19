@@ -1,4 +1,4 @@
-My nvim configuration 
+
 # 🧠 GitHub Copilot + Kickstart.nvim Setup
 
 This guide explains how to activate GitHub Copilot in Neovim using the `copilot.lua` plugin with the [`kickstart.nvim`](https://github.com/nvim-lua/kickstart.nvim) base config.
