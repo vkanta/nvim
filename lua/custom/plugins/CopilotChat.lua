@@ -14,5 +14,8 @@ return {
         window = { layout = 'float', width = 0.4 },
       }
     end,
+    vim.keymap.set('n', '<leader>cc', function()
+      require('CopilotChat').toggle()
+    end, { desc = 'Toggle Copilot Chat' }),
   },
 }
