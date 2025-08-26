@@ -249,29 +249,6 @@ rtp:prepend(lazypath)
 require('lazy').setup({
   -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
   'NMAC427/guess-indent.nvim',
-  --added by vkanta
-  {
-    'zbirenbaum/copilot.lua',
-    cmd = 'Copilot',
-    build = ':Copilot auth',
-    config = function()
-      require('copilot').setup {
-        suggestion = {
-          enabled = true,
-          auto_trigger = true,
-          keymap = {
-            accept = '<C-l>',
-            next = '<M-]>',
-            prev = '<M-[>',
-            dismiss = '<C-]>',
-          },
-        },
-        panel = { enabled = false },
-      }
-    end,
-  },
-
-  -- change ands here
   ---- Detect tabstop and shiftwidth automatically
 
   -- NOTE: Plugins can also be added by using a table,
@@ -706,7 +683,7 @@ require('lazy').setup({
         --    https://github.com/pmizio/typescript-tools.nvim
         --
         -- But for many setups, the LSP (`ts_ls`) will work just fine
-        ts_ls = {},
+        -- ts_ls = {},
         --
 
         lua_ls = {
